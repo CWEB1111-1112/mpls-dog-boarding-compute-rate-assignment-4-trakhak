@@ -10,49 +10,57 @@ namespace assignment_four
             //Global Declarations
             int dayCount;
             string code;
+            int EXIT = -1;//sentinel value
             double totalCost;
+            dayCount = houseKeeping();
+            while(dayCount != EXIT){
+                code = getCode();
+                totalCost = ComputeRate(code, dayCount);
+                Conclude(dayCount, code, totalCost);
+                dayCount = primer();
+            }
 
-            houseKeeping();
-            ComputeRate(int dayCount);
-            ComputeRate(int dayCount, string code);
-            conclude(int dayCount,string code,double totalCost);
+
+
         }
 
-        static void houseKeeping(){
+        static double ComputeRate(int dayCount, string code){
+            if code = ("A"){
+                totalCost = dayCount * 169; 
+            }
+            else{
+                totalCost = dayCount * 112;
+            }
+
+            return TotalCost;
+        }
+
+        static int houseKeeping(){
             int dayCount;
             Console.WriteLine("Enter how many days the dog will stay");
             dayCount = Convert.ToInt32(Console.ReadLine());
             return dayCount;
+        }
 
+        static string getCode(){
             string code;
             Console.WriteLine("Enter add-on code");
             code = Console.ReadLine();
             return code;
-
         }
 
-        static int ComputeRate(){
-
-        }
-
-        static int ComputeRate(){
-
-        }
-
-        static void conclude(int dayCount,string code, double totalCost){
-
-        }
-        
-        do
+        static int primer()
         {
-            
-        } while (true);
+            int dayCount;
+            Console.WriteLine("to enter another dog, enter number of days or enter -1 to exit");
+            dayCount = Convert.ToInt32(Console.ReadLine());
+            return dayCount;
 
-        //Overloaded method with one argument
+        }
 
+        static void Conclude(int dayCount, string code, double totalCost){
 
-
-
-        //Overloaded method with two arguments
+            Console.WriteLine($"Number of days: {dayCount} \nCode: {code}\nTotal Cost: {totalCost}");
+        }
     }
 }

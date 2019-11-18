@@ -1,0 +1,4 @@
+C:\Users\trakhak\Desktop\mpls-dog-boarding-compute-rate-assignment-4-trakhak\bin\Debug\netcoreapp1.1\assignment_four.deps.json
+C:\Users\trakhak\Desktop\mpls-dog-boarding-compute-rate-assignment-4-trakhak\bin\Debug\netcoreapp1.1\assignment_four.runtimeconfig.json
+C:\Users\trakhak\Desktop\mpls-dog-boarding-compute-rate-assignment-4-trakhak\bin\Debug\netcoreapp1.1\assignment_four.runtimeconfig.dev.json
+C:\Users\trakhak\Desktop\mpls-dog-boarding-compute-rate-assignment-4-trakhak\obj\Debug\netcoreapp1.1\assignment_four.AssemblyInfo.cs
