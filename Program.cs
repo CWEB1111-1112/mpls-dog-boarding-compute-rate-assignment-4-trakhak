@@ -17,8 +17,10 @@ namespace assignment_four
                 code = getCode();
                 if (code = "A"){
                     ComputeRateA(dayCount);
-                }else{
+                }else(code = "C"){
                     ComputeRateC(dayCount);
+                }else{
+                    ComputeRate(dayCount);
                 }
 
                 Conclude(dayCount, code, totalCost);
@@ -42,6 +44,14 @@ namespace assignment_four
 
             return totalCost;
         }
+
+        static double ComputeRateC(double totalCost, int dayCount){
+            int dayCount;
+            totalCost = dayCount * 75;
+
+            return totalCost;
+        }
+
         static int houseKeeping(){
             int dayCount;
             Console.WriteLine("Enter how many days the dog will stay");
